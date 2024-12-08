@@ -1,0 +1,99 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to bottom right, #FFB6C1, #FF69B4, #FFDAB9);
+    color: #580991;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding for aesthetics */
+    overflow: hidden; /* Prevent scrolling of the body */
+  }
+  
+  /* Container */
+  .container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    max-height: 90vh; /* Limit the height for smaller screens */
+    overflow-y: auto; /* Enable vertical scrolling for overflowing content */
+  }
+  
+  /* Letter Text */
+  .letter h1 {
+    font-size: 2rem; /* Adjusted size for mobile */
+    margin-bottom: 15px;
+    color: #8B0000;
+  }
+  
+  .letter p {
+    font-size: 1rem; /* Smaller font for better readability on small screens */
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  .letter strong {
+    font-size: 1.2rem;
+    color: #DC143C;
+  }
+  
+  /* Heart Animation (Optional) */
+  body::before {
+    content: "💖";
+    position: absolute;
+    font-size: 120px; /* Slightly smaller for mobile */
+    animation: float 4s infinite;
+    color: rgba(255, 182, 193, 0.4);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -45%) scale(1.1);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+  /* Media Query for Small Screens */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Softer shadow for smaller screens */
+    }
+  
+    .letter h1 {
+      font-size: 1.8rem; /* Reduce heading size */
+    }
+  
+    .letter p {
+      font-size: 0.95rem; /* Slightly smaller text */
+    }
+  
+    .letter strong {
+      font-size: 1.1rem; /* Adjust strong text size */
+    }
+  
+    body::before {
+      font-size: 90px; /* Smaller floating heart */
+    }
+  }
+  
