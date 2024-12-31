@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Heart Background -->
+  <div class="heart-background">
+    <!-- JavaScript will populate these -->
+  </div>
+
   <div class="container">
     <h1>Love Letters</h1>
     <div class="scrollable-list">
@@ -19,5 +24,18 @@
       </ul>
     </div>
   </div>
+
+    <!-- JavaScript to Populate Hearts -->
+    <script>
+      const heartBackground = document.querySelector('.heart-background');
+      const totalHearts = 450; // Adjust for how many hearts you want
+  
+      for (let i = 0; i < totalHearts; i++) {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.textContent = '❤️';
+        heartBackground.appendChild(heart);
+      }
+    </script>
 </body>
 </html>
