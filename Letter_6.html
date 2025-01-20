@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Letter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Heart Background -->
+   <div class="heart-background">
+    <!-- JavaScript will populate these -->
+  </div>
+  
+  <div class="container">
+    <div class="letter">
+      <h1>My Love,</h1>
+        <p>My dear baby, i love youuuu, i want to tell you that how much import and love i have for you, i know this past 2-3 days were bad days in our relationship, but whatever happens my love is not going down for you. i love you and i want you</p>
+        <p>i know i have done big mistake and im really sorry and ashamed of my action which i have done in my anger, but all i wanted to love you n then this happened i want you to be happy n smiling but end up making mess im sorry for all that.</p>
+        <p>i love you baby no matter whoever comes but no one can take your place, you r the only person in my heart, you are very very special person, all i want is youuuuuuuuuu and your loveeeeeeeeeee, all the other girls are my sisters and you are the only one is my wify, my baby, my cutie, my kajukatli, my panda</p>
+        <p>please forgive me it wont happen again, i know my mistakes n i am correcting it, but never thought that i dnt love you, i love you to my death</p>
+        <p>In this world🌍 all i want you is you my baby 👉💓</p>
+        <p><strong>Your Tanmay</strong></p>
+    </div>
+  </div>
+  <!-- JavaScript to Populate Hearts -->
+  <script>
+    const heartBackground = document.querySelector('.heart-background');
+    const totalHearts = 450; // Adjust for how many hearts you want
+
+    for (let i = 0; i < totalHearts; i++) {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.textContent = '❤️';
+      heartBackground.appendChild(heart);
+    }
+  </script>
+</body>
+</html>
