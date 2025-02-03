@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Letter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Heart Background -->
+   <div class="heart-background">
+    <!-- JavaScript will populate these -->
+  </div>
+  
+  <div class="container">
+    <div class="letter">
+      <h1>My Chico, My Shravani 💖</h1>
+      <p>Hi my strong little girl,
+        I know you’re going through a lot right now, but please don’t forget—“Mai hoon na.” I’m here, always, for every tear, every laugh, every fear. You’ve been stressing about us, the future, and a thousand little things, but let me say this: “Zindagi badi honi chahiye, lambi nahi” (Anand). Our journey might feel long, but I’ll walk it with you, side by side, fixing every problem, fighting every battle.</p>
+      <p>Baby, you’re Shravani—my bold, unstoppable girlfriend. Don’t ever doubt yourself. You’ve got a super strong personality and mind. “Impossible” is just a word, and you? You’re the girl who’ll crush it. Full marks, dream job, bike rides in the mountains… you’ll achieve it all. And guess what? Every “you” is actually “we” now. “Hum ek hai” (we are one), remember? One soul, one heartbeat.</p>
+      <p>I’m so sorry for everything you’ve gone through—the pain, the overthinking, the days I didn’t behave like the caring boyfriend you deserve. “Main agar kahoon… tum insaan ho, toh yeh bhi sach hai” (Om Shanti Om). I’m not perfect, but I promise I’ll improve. You’re my priority, my universe. If I ever make you feel unloved, slap me with your cute hands (gently!) and I’ll fix it.</p>
+      <p>My Chico, you’re the most amazing, charming person I’ve ever met. When you’re with me, the world feels comfy and bright—like “Yeh dil maange more!” (Dil Chahta Hai). Even in the next life, or the one after, no one could ever replace you. You’re my comfort, my peace, my “har khushi” (every happiness).</p>
+      <p>So stop overthinking, okay? Take that brilliant mind of yours and remember: I believe in you. Cry if you need to, scream if you want, but never forget—you’re loved beyond words. “Tujhme Rab Dikhta Hai” (Rab Ne Bana Di Jodi).</p>
+      <p>I love you today, tomorrow, and every lifetime after. Your Rahul 🌟</p>
+      <p>“Tum se hi… din hota hai, surmaiye shaam aati hai” (Jab We Met). Without you, my days have no light. 💞</p>
+        <p><strong>Your Tanmay</strong></p>
+    </div>
+  </div>
+  <!-- JavaScript to Populate Hearts -->
+  <script>
+    const heartBackground = document.querySelector('.heart-background');
+    const totalHearts = 450; // Adjust for how many hearts you want
+
+    for (let i = 0; i < totalHearts; i++) {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.textContent = '❤️';
+      heartBackground.appendChild(heart);
+    }
+  </script>
+</body>
+</html>
