@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Letter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Heart Background -->
+   <div class="heart-background">
+    <!-- JavaScript will populate these -->
+  </div>
+  
+  <div class="container">
+    <div class="letter">
+      <h1>My Chico 💖</h1>
+      <p>i love you chico my bb, in this past days we have been through alot, im sorry for everything happend in this past days and from the start, i really love you and i want you, i really appreciate what you do for me n im really happy and gratful to have you, you are the most beautiful, cute and intelligent girl, i respect your emotions, i never hated you for being emotional i love you like you r now only few things you have to change n you will change ik it, i never want you to cry n im sorry that i made you cry</p>
+      <p>when i heard the you got into accident i was really worried abt you, i was thinking are oky or not you r hurt or not, i wanted to talk to you but you were not responding, i asked prachiti to tell me what happend n everything, im sorry i didn't come to meet you n never called you, im really sorry, dont think i dont care abt you i really really care abt you, i cant explain my heart was pounding when i heard abt your accident, im really sorry</p>
+      <p>my chico please eat, sleep and take medicines on time or i will scold you, take care of your body n mental health and im here for that to take care of you, you r strong girl and you will recover faster ik</p>
+      <p>chico in this 2 days you are changed alot i like how you became now happy and clear n strong in these 2 days you became very good n super matured girl, i like this version of you n i really appreciate you r changing, i loveeeeeeeeeee youuuuuuuuu and my love is 10000x in these two days, i love you like these happy n smiling i love this smiles of your,</p>
+      <p>baby if there is anything in your mind come talk to me i will create safe space for you, just tell if anything is bothering you, dont keep it to you self, im here for you, i never wanted you to cry so please talk to me my bb</p>
+      <p><strong>Your Tanmay</strong></p>
+    </div>
+  </div>
+  <!-- JavaScript to Populate Hearts -->
+  <script>
+    const heartBackground = document.querySelector('.heart-background');
+    const totalHearts = 450; // Adjust for how many hearts you want
+
+    for (let i = 0; i < totalHearts; i++) {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.textContent = '❤️';
+      heartBackground.appendChild(heart);
+    }
+  </script>
+</body>
+</html>
