@@ -25,6 +25,7 @@
         <li><a href="Letter_7.html">Letter 7: My Strong Girl------3/2/25</a></li>
         <li><a href="Letter_8.html">Letter 8: You are Strong ------7/2/25</a></li>
         <li><a href="Letter_9.html">Letter 9: Good Behaviour ------23/2/25</a></li>
+        <li><a href="Letter_10.html">Letter 10: Green kurti ------28/2/25</a></li>
       </ul>
     </div>
   </div>
@@ -40,6 +41,21 @@
         heart.textContent = '❤️';
         heartBackground.appendChild(heart);
       }
+      //
+      const list = document.querySelector('.letter-list');
+      const items = Array.from(list.children).reverse();
+      list.innerHTML = '';
+      items.forEach(item => list.appendChild(item));
+      //
+      document.addEventListener("DOMContentLoaded", () => {
+      const firstLetter = document.querySelector(".letter-list li:first-child a");
+      if (firstLetter) {
+      const newTag = document.createElement("span");
+      newTag.classList.add("new-tag");
+      newTag.textContent = "New";
+      firstLetter.parentElement.appendChild(newTag);
+        }
+      });
     </script>
 </body>
 </html>

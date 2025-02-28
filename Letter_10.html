@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Letter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Heart Background -->
+   <div class="heart-background">
+    <!-- JavaScript will populate these -->
+  </div>
+  
+  <div class="container">
+    <div class="letter">
+      <h1>Chico💖</h1>
+      <p>i saw her today in green pista color kurti, she was looking so beautiful, when i saw her my heart was racing, she looked so perfect and beautiful, she was always beautiful in my eyes and perfect💓🥰✨, i really wanted to say that to her n i really wanted to tell her what i felt in that movement, but she was ignoring me and didn't even looked at me, so i didn't tell her i kept it to my self, i really wanted to talk but i didn't, im so dumb and stupid ik, but i only wanted her to understand that sometime she do smthing wrong that hurt me it actually hurt me, i never wanted her to go through any of bad phase.</p>
+      <p>i dont know how to make her understand and when i try to say what i feel it becomes something very bad and i became the villan, i dont know how to explain to her wht she did wrong and that hurt me.</p>
+      <p>its not her fault in this how she say n react maybe im the one who wrong, i never i wanted her to cry or to stay up all night because of me, i never wanted her to be in pain im sorry for everything that hurt you, sorry for hurting you</p>
+      <p>i saw her snap she got her new haircut that is looking so beautiful, cute and stunning '💓✨. that look of her is chumeshwari(this chumeshwari word i learned from her actually 😂) i really wanted her to say that to her maybe she will read this letter or maybe not idk know maybe she happy in her life now, i want her to be happy and its good i wanted her to see her happy</p>
+      <p>i was not complaining in this letter or wanted her to show how wrong n anything i just wrote this letter because i wanted to there is no hate feelings in this</p>
+      <p>im sorry to her to bringing her so much pain, i love her</p>
+      <p><strong>Your Tanmay</strong></p>
+    </div>
+  </div>
+  <!-- JavaScript to Populate Hearts -->
+  <script>
+    const heartBackground = document.querySelector('.heart-background');
+    const totalHearts = 450; // Adjust for how many hearts you want
+
+    for (let i = 0; i < totalHearts; i++) {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.textContent = '❤️';
+      heartBackground.appendChild(heart);
+    }
+  </script>
+</body>
+</html>
