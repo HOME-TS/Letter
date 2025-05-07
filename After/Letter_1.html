@@ -47,11 +47,26 @@
       <p><strong>What are my intentions of loving you?</strong></p>
       <p>I want you give you that love you never received, i want you give peaceful love, love that you deserve, i want to have happy family with you, you me and one little our girl.</p>
       <p><strong>I love You 3000</strong></p>
+      <p><strong>I Will Always Love you No Matter What</strong></p>
       <p><strong>Your Tanmay</strong></p>
     </div>
   </div>
+
+  <!-- Background Music -->
+  <audio id="bg-music" autoplay loop>
+    <source src="/Music/Love.mp4" type="audio/mpeg">
+  </audio>
+
+  
+
   <!-- JavaScript to Populate Hearts -->
   <script>
+      // Wait for the page to load
+    window.addEventListener('DOMContentLoaded', () => {
+      const audio = document.getElementById('bg-music');
+      audio.volume = 0.05; // Set volume to 20%
+    });
+    
     const heartBackground = document.querySelector('.heart-background');
     const totalHearts = 450; // Adjust for how many hearts you want
 
